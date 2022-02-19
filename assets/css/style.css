@@ -1,0 +1,260 @@
+html {
+    scroll-behavior: smooth ;
+}
+body{
+    background-color: hsl(31deg 52% 66%);  
+    padding: 0% ;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: whitesmoke ;
+    box-sizing: border-box ;
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box ;
+}
+span
+{
+    color: black ;
+    font-weight: bolder ;
+}
+/********** header & home page*************/ 
+header
+{
+    background-image: url(../img/payremieds.jpg);
+    background-size: cover ;
+}
+header .felter
+{
+   /* background-color: rgba(0, 0, 0, .3);*/
+    background: repeating-linear-gradient(0deg, #d5aa7b, transparent);
+    height: 100vh;
+    position: relative;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    flex-direction: column ;
+
+}
+nav
+{
+    font: bold normal 16px/16px "Segoe UI" ;
+    color: whitesmoke ;
+    position: absolute !important;
+    top: 0%;
+    background-color: rgba(0, 0, 0, .7);
+}
+nav ul
+{
+    justify-content: space-around ;
+}
+.nav-item:hover
+{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+.homeContent
+{ 
+    text-align: center ;
+    font: bold normal 16px/16px "Segoe UI" ;
+    color: white ;
+    padding-top: 16px;
+}
+.homeContent .discover h1::after
+{
+    content: "";
+    animation-name: reapet ;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out ;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite ;
+}
+@keyframes reapet {
+    
+    10% 
+    {
+        content: "W";
+    }
+    20% {
+        content: "Wo"
+    }
+    30%
+    {
+        content: "Wor"
+    }
+    40%
+    {
+        content: "Worl"
+    }
+    50%
+    {
+        content: "World"
+    }
+    60% 
+    {
+        content: "E";
+    }
+    70% {
+        content: "Eg"
+    }
+    80%
+    {
+        content: "Egy"
+    }
+    90%
+    {
+        content: "Egyp"
+    }
+    100%
+    {
+        content: "Egypt"
+    }
+}
+                        /********** header & home page*************/ 
+
+.videoAncient
+{
+    justify-content: center;
+    align-items: center ;
+    position: relative ;
+}
+.videoAncient .civililazationWord
+{
+    font-size: 13vw ;
+    color: #d1a67a ;
+}
+/*.videoAncient .civililazationWord::after
+{
+    content: "";
+    width: 85vw;
+    height: 1vh;
+    background-color: sienna ;
+    position: absolute ; 
+    bottom: 0%;
+    left: 6% ;
+}*/
+.videoAncient .videoFrame 
+{
+    position: absolute ;
+}
+                            /*********** EGYPT-Artical ******/
+.EgyptArtical
+{
+    background-color: hsl(30deg 49% 65%);
+}
+.articl
+{
+    align-content: center ;
+}
+.articl a 
+{
+    text-decoration: underline;
+    color: #6c757d!important;
+}
+.aboutKingTut , .aboutAnubis
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Tutankhamoun , .Anubis
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Tutankhamoun img 
+{
+    z-index: 1;
+}
+.Tutankhamoun .triangle
+{
+    transform: rotate(152deg);
+    background: linear-gradient(35deg, #e8cfb2, transparent);
+    width: 68%;
+    height: 90%;
+}
+.Anubis img
+{
+    z-index: 1;
+}
+.Anubis .circal
+{
+    border-radius: 50%;
+    background: linear-gradient(180deg, #e8cfb2, transparent);
+    width: 82%;
+    height: 100%;
+}
+.btnmore
+{
+    border-style: solid ;
+    color: #6c757d!important;
+}
+                            /*********** EGYPT-Galery ******/
+
+.carousel
+{
+    width: 75vw;
+}
+.carousel-item 
+{
+    height: 300px;
+    background-size: cover ;
+    width: 50%;
+    position: relative;
+    margin-right: 0%; 
+    float: left;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
+}
+
+                            /*********** EGYPT-sponsore ******/
+
+.sponsore
+{
+    background-image: url(../img/camel.jpg);
+    background-repeat: no-repeat ;
+    background-position: 50% 50% ;
+    background-size: cover ;
+    height: 45vh;
+}
+.sponsore .container-fluid 
+{
+    background: repeating-linear-gradient(0deg, #d5aa7b, transparent);
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+.sponsore .container-fluid .row
+{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    height: 100%;
+}
+.sponsore .container-fluid .row .felter
+{
+    background: repeating-linear-gradient(180deg, #d5aa7b, transparent);
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+.partnersLogoes
+{
+    justify-content: center ;
+    align-content: center ;
+    align-items: center ;
+    opacity: 0.8;
+}
+footer
+{
+    width: 90vw;
+    height: 100px;
+    border-top: #6c757d solid 1px ;
+    margin: auto ;
+}
+footer a
+{
+    color: whitesmoke !important;
+}
