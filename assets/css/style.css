@@ -22,7 +22,7 @@ header
     background-image: url(../img/payremieds.jpg);
     background-size: cover ;
 }
-header .felter
+header .filter
 {
    /* background-color: rgba(0, 0, 0, .3);*/
     background: repeating-linear-gradient(0deg, #d5aa7b, transparent);
@@ -232,7 +232,7 @@ nav ul
     position: relative;
     height: 100%;
 }
-.sponsore .container-fluid .row .felter
+.sponsore .container-fluid .row .filter
 {
     background: repeating-linear-gradient(180deg, #d5aa7b, transparent);
     position: absolute;
