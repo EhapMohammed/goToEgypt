@@ -41,6 +41,7 @@ nav
     position: absolute !important;
     top: 0%;
     background-color: rgba(0, 0, 0, .7);
+    z-index: 999;
 }
 nav ul
 {
@@ -114,12 +115,27 @@ nav ul
 {
     justify-content: center;
     align-items: center ;
-    position: relative ;
+    height: 350px;
+    width: 100vw;
+    position: relative;
 }
 .videoAncient .civililazationWord
 {
-    font-size: 13vw ;
+    font-size: 13vw;
     color: #d1a67a ;
+}
+.videoAncient .videoFrame
+{
+    position: absolute;
+    width: 50vw;
+    height: 300px;
+}
+@media (max-width:769px) {
+.videoAncient .videoFrame
+{
+    width: 90vw;
+    height: 50vh;
+}
 }
 /*.videoAncient .civililazationWord::after
 {
@@ -131,10 +147,6 @@ nav ul
     bottom: 0%;
     left: 6% ;
 }*/
-.videoAncient .videoFrame 
-{
-    position: absolute ;
-}
                             /*********** EGYPT-Artical ******/
 .EgyptArtical
 {
@@ -161,9 +173,10 @@ nav ul
     align-items: center;
     justify-content: center;
 }
-.Tutankhamoun img 
+.Tutankhamoun img , .Anubis img
 {
     z-index: 1;
+    height: 250px;
 }
 .Tutankhamoun .triangle
 {
@@ -171,10 +184,6 @@ nav ul
     background: linear-gradient(35deg, #e8cfb2, transparent);
     width: 68%;
     height: 90%;
-}
-.Anubis img
-{
-    z-index: 1;
 }
 .Anubis .circal
 {
@@ -196,7 +205,6 @@ nav ul
 }
 .carousel-item 
 {
-    height: 300px;
     background-size: cover ;
     width: 50%;
     position: relative;
